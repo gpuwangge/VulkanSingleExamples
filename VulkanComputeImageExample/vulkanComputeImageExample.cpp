@@ -554,7 +554,7 @@ private:
     }
 
     void createComputePipeline() {
-        auto shader = readFile("shaders/comp.spv");
+        auto shader = readFile("../shaders/comp.spv");
         VkShaderModule shaderModule = createShaderModule(shader);
 
         VkPipelineShaderStageCreateInfo shaderStageInfo{};
