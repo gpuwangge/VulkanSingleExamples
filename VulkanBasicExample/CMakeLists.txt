@@ -6,19 +6,19 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_BUILD_TYPE "Debug")
 
 #Set variables so all cmakelists.txt in sub dirs can access
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib) #this is required in Windows, all lib goes here
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib) #this is not required in windows
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin) #all exe dll/exe goes here
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib) # Static libraries (.lib) and import libraries (.lib) go here.
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib) # Shared libraries (.so/.dylib). Mostly used on Linux/macOS.
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin) # Executables and DLLs go here.
 
 include_directories(
     #$ENV{VULKAN_SDK}/Include
-    $ENV{INCLUDE}        #Put this in environment user variable INCLUDE: C:\VulkanSDK\GLFW\include;C:\VulkanSDK\GLM
+    #$ENV{INCLUDE}
     ${CMAKE_SOURCE_DIR}/../external/GLFW/glfw3.4/include
     ${CMAKE_SOURCE_DIR}/../external/vulkan/1.4.328.1/include)
 
 link_directories(
     #$ENV{VULKAN_SDK}/Lib
-    $ENV{LIB}
+    #$ENV{LIB}
     ${CMAKE_SOURCE_DIR}/../external/GLFW/glfw3.4/lib
     ${CMAKE_SOURCE_DIR}/../external/vulkan/1.4.328.1/lib)          #Put this in environment user variable LIB: C:\VulkanSDK\GLFW\lib-static-ucrt  
 

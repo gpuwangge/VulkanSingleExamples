@@ -2,7 +2,7 @@
 // Contact: webmaster@saschawillems.de
 
 #define GLFW_INCLUDE_VULKAN
-#include <GLFW/glfw3.h>
+#include "glfw3.h"
 
 #define GLM_FORCE_RADIANS
 #include <glm/glm.hpp>
@@ -589,8 +589,8 @@ private:
 
 
     void createGraphicsPipeline() {
-        auto vertShaderCode = readFile("../shaders/vert.spv");
-        auto fragShaderCode = readFile("../shaders/frag.spv");
+        auto vertShaderCode = readFile("../../shaders/vert.spv");
+        auto fragShaderCode = readFile("../../shaders/frag.spv");
 
         VkShaderModule vertShaderModule = createShaderModule(vertShaderCode);
         VkShaderModule fragShaderModule = createShaderModule(fragShaderCode);
@@ -709,7 +709,7 @@ private:
     }
 
     void createComputePipeline() {
-        auto computeShaderCode = readFile("../shaders/comp.spv");
+        auto computeShaderCode = readFile("../../shaders/comp.spv");
 
         VkShaderModule computeShaderModule = createShaderModule(computeShaderCode);
 
