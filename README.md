@@ -55,7 +55,10 @@ Show a purple rect in the window using only compute shader
 Depth test. One textured square on top of another textured square.  
 
 ## modelload
-Model load.  
+Model load using tiny_obj_loader.  
+
+## textureload
+Texture load using stb_image.
 
 ## headless
 Based on simpletriangle, but remove glfw. Dump .ppm instead of present it on screen.  
