@@ -25,7 +25,15 @@ $env:VK_LAYER_PATH
 - 安装Vulkan SDK
 - 源代码自动寻找"vulkan\layers"这个位置，详细见LuminError的instance.cpp (SetupVulkanLayerPath)
 
-In Linux
+
+# Build/Run for Linux
+在Vulkan网站下载Linux版本的安装包(.tar.xz)，用tar -xvf解压缩。  
+使用里面的include/, lib/。注意的是有些文件名跟windows的不一样，比如windows icd loader叫vulkan-1.lib, linux的就叫libvulkan.so。  
+libvulkan.so实际上它只是一个符号链接（symlink）。最终运行时加载的是 libvulkan.so.1 因此 Linux 其实也有"1"，只是隐藏在 .so.1 中，而不是名字里。  
+
+另外glslc也有linux版本，在bin/文件夹里。这里注意不管在windows还是linux下编译出来的.spv都是一样的，可以通用。  
+
+Set layers location in Linux
 ```
 VK_LAYER_PATH=/vulkan/layers ./your_program
 ```
