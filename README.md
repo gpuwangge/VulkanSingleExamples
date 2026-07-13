@@ -51,6 +51,9 @@ https://github.com/Overv/VulkanTutorial/blob/main/code/31_compute_shader.cpp
 ## imagecompute
 Show a purple rect in the window using only compute shader  
 
+## depth
+Depth test. One textured square on top of another textured square.  
+
 ## headless
 Based on simpletriangle, but remove glfw. Dump .ppm instead of present it on screen.  
 to view .ppm, use GIMP: https://www.gimp.org/downloads/  
