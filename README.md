@@ -40,12 +40,16 @@ VK_LAYER_PATH=/vulkan/layers ./your_program
 
 
 # Example Explain
-## VulkanBasicExample
-source: hello triangle from https://vulkan-tutorial.com/  
+## simpletriangle
+source: hello triangle example from https://vulkan-tutorial.com/  
 https://github.com/Overv/VulkanTutorial/blob/main/code/15_hello_triangle.cpp  
 
-## VulkanOfflineExample
-Based on VulkanBasicExample, but remove glfw. Dump .ppm instead of present it on screen.  
+## particlecompute
+source: compute example from https://vulkan-tutorial.com/  
+https://github.com/Overv/VulkanTutorial/blob/main/code/31_compute_shader.cpp  
+
+## headless
+Based on simpletriangle, but remove glfw. Dump .ppm instead of present it on screen.  
 to view .ppm, use GIMP: https://www.gimp.org/downloads/  
 注意：这是一个headless 示例。  
 
