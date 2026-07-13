@@ -1,6 +1,7 @@
-# Build Instruction
-Setup CMake/Vulkan/GLFW/GLM  
-(一些项目已经内部集成Vulkan/GLFW，不需要系统级设定)
+# Build
+Setup CMake  
+项目已经内部集成Vulkan/GLFW，不需要系统级设定()  
+一些项目可能需要GLM  
 Go to the directory of a single vulkan example  
 ```
 mkdir build  
@@ -9,7 +10,7 @@ cmake -G "MinGW Makefiles" ..
 make  
 ```
 
-# Run Instruction
+# Run
 To use validation layer, in VS Code Terminal(Power Shell), before you execute the binary, run the following:  
 ```
 $env:VK_LAYER_PATH="vulkan\layers"
@@ -22,7 +23,7 @@ $env:VK_LAYER_PATH
 如果不想运行前设置VK_LAYER_PATH，可以用以下方法任选其一：
 - 系统变量中设置VK_LAYER_PATH
 - 安装Vulkan SDK
-- 自动寻找"vulkan\layers"这个位置，详细间LuminError的instance.cpp (SetupVulkanLayerPath)
+- 源代码自动寻找"vulkan\layers"这个位置，详细见LuminError的instance.cpp (SetupVulkanLayerPath)
 
 In Linux
 ```
