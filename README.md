@@ -54,6 +54,9 @@ Show a purple rect in the window using only compute shader
 ## depth
 Depth test. One textured square on top of another textured square.  
 
+## modelload
+Model load.  
+
 ## headless
 Based on simpletriangle, but remove glfw. Dump .ppm instead of present it on screen.  
 to view .ppm, use GIMP: https://www.gimp.org/downloads/  
