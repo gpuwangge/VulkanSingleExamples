@@ -1,5 +1,5 @@
 #define GLFW_INCLUDE_VULKAN
-#include <GLFW/glfw3.h>
+#include "glfw3.h"
 
 #include <iostream>
 #include <fstream>
@@ -554,7 +554,7 @@ private:
     }
 
     void createComputePipeline() {
-        auto shader = readFile("../shaders/comp.spv");
+        auto shader = readFile("../../shaders/comp.spv");
         VkShaderModule shaderModule = createShaderModule(shader);
 
         VkPipelineShaderStageCreateInfo shaderStageInfo{};
