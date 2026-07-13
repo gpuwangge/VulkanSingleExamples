@@ -3,12 +3,12 @@
     {
       "name": "windows-gcc-x64",
       "includePath": [
-        "${workspaceFolder}/**",
-        "C:/VulkanSDK",
-        "C:/VulkanSDK/GLM",
-        "C:/VulkanSDK/GLFW/include",
+        "${workspaceFolder}/**"
+        //"C:/VulkanSDK",
+        //"C:/VulkanSDK/GLM",
+        //"C:/VulkanSDK/GLFW/include",
         //"C:/VulkanSDK/1.2.176.1/Include"
-        "${VULKAN_SDK}/Include"
+        //"${VULKAN_SDK}/Include"
       ],
       "compilerPath": "C:/mingw64/bin/gcc.exe",
       "cStandard": "${default}",
