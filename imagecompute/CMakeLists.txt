@@ -33,3 +33,6 @@ endforeach()
 file(COPY ${PROJECT_SOURCE_DIR}/../external/GLFW/glfw3.4/lib/glfw3.dll DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/)
 file(COPY ${PROJECT_SOURCE_DIR}/../external/vulkan/1.4.328.1/Layer/VkLayer_khronos_validation.dll DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/vulkan/layers/)
 file(COPY ${PROJECT_SOURCE_DIR}/../external/vulkan/1.4.328.1/Layer/VkLayer_khronos_validation.json DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/vulkan/layers/)
+
+
+file(COPY ${PROJECT_SOURCE_DIR}/shaders/comp.spv DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/shaders/)

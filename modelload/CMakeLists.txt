@@ -33,3 +33,8 @@ file(COPY ${PROJECT_SOURCE_DIR}/../external/GLFW/glfw3.4/lib/glfw3.dll DESTINATI
 file(COPY ${PROJECT_SOURCE_DIR}/../external/vulkan/1.4.328.1/Layer/VkLayer_khronos_validation.dll DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/vulkan/layers/)
 file(COPY ${PROJECT_SOURCE_DIR}/../external/vulkan/1.4.328.1/Layer/VkLayer_khronos_validation.json DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/vulkan/layers/)
 
+file(COPY ${PROJECT_SOURCE_DIR}/shaders/vert.spv DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/shaders/)
+file(COPY ${PROJECT_SOURCE_DIR}/shaders/frag.spv DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/shaders/)
+
+file(COPY ${PROJECT_SOURCE_DIR}/models/viking_room.obj DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/models/)
+file(COPY ${PROJECT_SOURCE_DIR}/textures/viking_room.png DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/textures/)
