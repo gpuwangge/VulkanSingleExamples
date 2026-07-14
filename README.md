@@ -10,6 +10,11 @@ cmake -G "MinGW Makefiles" ..
 make  
 ```
 
+如果需要禁用validation layer，可以在cmakelists.txt里面加上：  
+```
+add_compile_definitions(NDEBUG)
+```
+
 # Run
 To use validation layer, in VS Code Terminal(Power Shell), before you execute the binary, run the following:  
 ```
