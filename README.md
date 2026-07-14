@@ -25,7 +25,7 @@ To confirm the environment is set, run:
 $env:VK_LAYER_PATH
 ```
 
-如果不想运行前设置VK_LAYER_PATH，可以用以下方法任选其一：
+如果想使用validation layer, 同时又不想运行前设置VK_LAYER_PATH，可以用以下方法任选其一：
 - 系统变量中设置VK_LAYER_PATH
 - 安装Vulkan SDK
 - 源代码自动寻找"vulkan\layers"这个位置，详细见LuminError的instance.cpp (SetupVulkanLayerPath)
