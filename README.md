@@ -50,6 +50,7 @@ https://github.com/Overv/VulkanTutorial/blob/main/code/31_compute_shader.cpp
 
 ## imagecompute
 Show a purple rect in the window using only compute shader  
+Write image directly to swapchain image  
 
 ## depth
 Depth test. One textured square on top of another textured square.  

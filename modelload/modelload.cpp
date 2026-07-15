@@ -2063,9 +2063,8 @@ private:
     }
 };
 
-int main()
-{
-    printf("begin...");
+int main(){
+    //printf("begin...");
     HelloTriangleApplication app;
 
     try
