@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 SET(CMAKE_C_COMPILER "C:/mingw64/bin/gcc.exe")
 SET(CMAKE_CXX_COMPILER "C:/mingw64/bin/g++.exe")
-project(headless)
+project(simpletriangle_headless)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_BUILD_TYPE "Debug")
 
