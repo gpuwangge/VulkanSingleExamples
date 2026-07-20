@@ -11,15 +11,13 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib) # Shared libraries (
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin) # Executables and DLLs go here.
 
 include_directories(
-    ${CMAKE_SOURCE_DIR}/../external/GLFW/glfw3.4/include
     ${CMAKE_SOURCE_DIR}/../external/vulkan/1.4.328.1/include
     ${CMAKE_SOURCE_DIR}/../external/glm/0.9.9.8)
 
 link_directories(
-    ${CMAKE_SOURCE_DIR}/../external/GLFW/glfw3.4/lib
     ${CMAKE_SOURCE_DIR}/../external/vulkan/1.4.328.1/lib)
 
-link_libraries(vulkan-1 glfw3dll)
+link_libraries(vulkan-1)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
@@ -29,7 +27,6 @@ foreach(cppfile IN LISTS SRC)
     add_executable(${PROJECT_NAME} ${cppfile})
 endforeach()  
 
-file(COPY ${PROJECT_SOURCE_DIR}/../external/GLFW/glfw3.4/lib/glfw3.dll DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/)
 file(COPY ${PROJECT_SOURCE_DIR}/../external/vulkan/1.4.328.1/Layer/VkLayer_khronos_validation.dll DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/vulkan/layers/)
 file(COPY ${PROJECT_SOURCE_DIR}/../external/vulkan/1.4.328.1/Layer/VkLayer_khronos_validation.json DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/vulkan/layers/)
 
